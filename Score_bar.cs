@@ -24,6 +24,6 @@ public class Score_bar : MonoBehaviour {
   
   	void AddScore(int score){
     		score_total += score;
-    		score_bar_text = "Score : " + score_total.ToString();
+    		score_bar_text.text = "Score : " + score_total.ToString();
  	}
 }
