@@ -9,17 +9,17 @@ public class Score_bar : MonoBehaviour {
   
 	void Start () {
 		score_bar_text = gameObject.GetComponent<Text>();
-    score_total = 0;
+    		score_total = 0;
 	}
 	
 	void Update () {
 		if (!Collision){
-      AddScore(50);
-    }
+      		AddScore(50);
+   	 	}
 	}
   
-  void AddScore(int score){
-    score_total += score;
-    score_bar_text = "Score : " + score_total.ToString();
-  }
+  	void AddScore(int score){
+    		score_total += score;
+    		score_bar_text = "Score : " + score_total.ToString();
+ 	}
 }
