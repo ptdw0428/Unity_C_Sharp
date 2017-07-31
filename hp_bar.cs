@@ -12,7 +12,7 @@ public class hp_bar : MonoBehaviour {
 	void Start () {
 		hpBar = gameObject.GetComponent<Image>();
 		total_HP = 100;
-		minus_HP = 2;
+		minus_HP = 10;
 	}
 	
 	// Update is called once per frame
