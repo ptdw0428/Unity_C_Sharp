@@ -1,0 +1,20 @@
+using System.Collections;
+using UnityEngine;
+
+public class Score_bar : MonoBehaviour {
+  private float h = 0.0f;
+  private float v = 0.0f;
+  
+  private Transform tr;   //Component Variable
+  
+  public float move_speed = 10.0f;    //Speed
+  
+	void Start () {
+    tr = GetComponent<Transform>();
+	}
+	
+	void Update () {
+		h = Input.GetAxis("Horizontal");
+    v = Input.GetAxis("vertical");
+	}
+}
