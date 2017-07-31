@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score_bar : MonoBehaviour {
 
@@ -14,8 +15,11 @@ public class Score_bar : MonoBehaviour {
 	
 	void Update () {
 		if (!Collision){
-      		AddScore(50);
+      			AddScore(10);
    	 	}
+		if(score_total == 150){
+			SceneManager.LoadScene("Clear");	//If score is over 150 point, Change the Claer Scene!
+		}
 	}
   
   	void AddScore(int score){
