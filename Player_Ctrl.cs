@@ -9,12 +9,12 @@ public class Score_bar : MonoBehaviour {
   public float move_speed = 10.0f;    //Speed
   
   void Start () {
-  tr = GetComponent<Transform>();
+  	tr = GetComponent<Transform>();
   }
 	
 	void Update () {
 		h = Input.GetAxis("Horizontal");
-  		v = Input.GetAxis("vertical");
+  	v = Input.GetAxis("vertical");
 		
 		Vector3 movedir = (Vector3.forward * v) + (Vector3.right * h);
 		
