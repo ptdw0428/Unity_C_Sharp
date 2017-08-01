@@ -18,6 +18,6 @@ public class Score_bar : MonoBehaviour {
 		
 		Vector3 movedir = (Vector3.forward * v) + (Vector3.right * h);
 		
-		tr.Translate (moveDir * Time.deltaTime * moveSpeed, Space.Self);
+		tr.Translate (moveDir.normalized * Time.deltaTime * moveSpeed, Space.Self);
 	}
 }
